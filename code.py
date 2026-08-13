@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-### texto de prueba SQLi
+###-------- texto de prueba SQLi
 
 from flask import Flask, request
 import sqlite3
