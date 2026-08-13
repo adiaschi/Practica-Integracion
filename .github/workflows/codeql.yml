@@ -62,7 +62,10 @@ jobs:
     # or others). This is typically only required for manual builds.
     # - name: Setup runtime (example)
     #   uses: actions/setup-example@v1
-
+- name: Debug files
+    run: |
+      echo "Python files found:"
+      find . -type f -name "*.py" -print
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v4
