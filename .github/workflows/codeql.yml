@@ -56,18 +56,18 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v7
-
+    - name: Check code.py
+      run: |
+        ls -l code.py
+        file code.py
     # Add any setup steps before running the `github/codeql-action/init` action.
     # This includes steps like installing compilers or runtimes (`actions/setup-node`
     # or others). This is typically only required for manual builds.
     # - name: Setup runtime (example)
     #   uses: actions/setup-example@v1
 
-- name: Check code.py
-  run: |
-    ls -l code.py
-    file code.py
-    
+
+
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v4
